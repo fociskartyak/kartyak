@@ -1,0 +1,73 @@
+/* Alap stílusok */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+#card-list .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+#card-list .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+#card-list img {
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-body h5 {
+  font-size: 1.1rem;
+}
+
+#card-images img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#facebook-button {
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+
+/* Kép alatti információk stílusa */
+.image-info {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.image-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Reszponzív dizájn */
+@media (max-width: 768px) {
+  #card-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
